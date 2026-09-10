@@ -35,3 +35,6 @@ jobs:
 
       - name: Test
         run: flutter test
+
+## CI
+Pull Request в main проверяет job 'verify' (format, analyze, test).
