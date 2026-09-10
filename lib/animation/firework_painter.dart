@@ -15,10 +15,7 @@ class Shard {
 }
 
 class FireworksPainter extends CustomPainter {
-  FireworksPainter({
-    required this.progress,
-    required this.shards,
-  });
+  FireworksPainter({required this.progress, required this.shards});
 
   final double progress;
   final List<Shard> shards;

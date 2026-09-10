@@ -12,8 +12,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage>
-    with TickerProviderStateMixin {
+class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   int _counter = 0;
   List<Shard>? _shards;
 
@@ -120,8 +119,9 @@ class _MyHomePageState extends State<MyHomePage>
                       if (_shards == null && size.shortestSide > 0) {
                         _shards = _burst(size);
                       }
-                      final voidT =
-                          Curves.easeInCubic.transform(_voidCtrl.value);
+                      final voidT = Curves.easeInCubic.transform(
+                        _voidCtrl.value,
+                      );
                       return DecoratedBox(
                         decoration: BoxDecoration(
                           gradient: RadialGradient(
