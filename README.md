@@ -19,3 +19,9 @@ samples, guidance on mobile development, and a full API reference.
 ## CI
 
 Pull Request в `main` проверяет job `verify` (format, analyze, test).
+
+## CD
+
+После зелёного `verify` на `main` робот собирает Flutter web и кладёт на GitHub Pages:
+
+https://cholponai01.github.io/ci-cd-practice/
